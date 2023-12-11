@@ -1,0 +1,22 @@
+body {
+  background-image: url("a.svg");
+  background-size: cover;
+  text-align: center;
+}
+
+div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 10%;
+}

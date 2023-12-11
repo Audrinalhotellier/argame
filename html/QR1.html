@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>QR1</title>
+   
+</head>
+<body>
+    <div id="container1" class="container" onclick="changerApparence(this)">
+        <div class="background-image"><p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. </p></div>
+        <div class="navigation-buttons">
+            <div class="navigation-button" onclick="retourAuDebut()">Revenir au Début</div>
+        </div>
+    </div>
+    
+    <div id="container2" class="container hidden" onclick="changerApparence(this)">
+        
+        <div class="background-image"><p> Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p></div>
+        <div class="navigation-buttons">
+            <div class="navigation-button" onclick="retourAuDebut()">Revenir au Début</div>
+        </div>
+    </div>
+   
+<div id="container3" class="container hidden" onclick="changerApparence(this)">
+    <video width="100%" height="100%" controls autoplay>
+        <source src="/assets/mov_bbb.mp4" type="video/mp4">Your browser does not support the video tag.
+    </video>
+    <div class="navigation-buttons">
+        <div class="navigation-button" onclick="retourAuDebut()">Revenir au Début</div>
+    </div>
+</div>
+    <div id="container4" class="container hidden">
+        <a href="/html/QR2M.html"><img src="/assets/porte.jpg" alt=""></a>
+        <a href="/html/QR2P.html"><img src="/assets/porte.jpg" alt=""></a>
+        <div class="navigation-buttons">
+            <div class="navigation-button" onclick="retourAuDebut()">Revenir au Début</div>
+        </div>
+    </div>
+
+    <script>
+        var containers = document.querySelectorAll('.container');
+       
+        var clics = 0;
+
+        function changerApparence() {
+            var containerActuel = containers[clics % containers.length];
+            containerActuel.classList.add('hidden');
+
+            clics++;
+
+            var containerSuivant = containers[clics % containers.length];
+            containerSuivant.classList.remove('hidden');
+            changerCouleurFond(containerSuivant);
+        }
+
+        function changerCouleurFond(container) {
+            var couleur = couleurs[clics % couleurs.length];
+            container.style.backgroundColor = couleur;
+        }
+
+        function retourAuDebut() {
+            for (var i = 1; i < containers.length; i++) {
+                containers[i].classList.add('hidden');
+            }
+            clics = 0;
+            containers[0].classList.remove('hidden');
+            changerCouleurFond(containers[0]);
+        }
+    </script>
+</body>
+</html>
