@@ -7,6 +7,12 @@
     <title>QR1</title>
   </head>
   <body>
+    <!-- Ajouter cet élément audio pour le son d'ambiance -->
+    <audio id="ambianceAudio" loop>
+      <source src="../assets/court.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
+    </audio>
+
     <div id="container1" class="container" onclick="changerApparence(this)">
       <div class="background-image">
         <p>
@@ -51,7 +57,14 @@
       class="container hidden"
       onclick="changerApparence(this)"
     >
-      <video width="100%" height="100%" controls autoplay>
+      <video
+        id="videoContainer3"
+        width="100%"
+        height="100%"
+        controls
+        onended="videoEnded()"
+        onclick="lancerVideo()"
+      >
         <source src="../assets/mov_bbb.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -73,10 +86,21 @@
 
     <script>
       var containers = document.querySelectorAll(".container");
-
+      var ambianceAudio = document.getElementById("ambianceAudio");
+      var videoContainer3 = document.getElementById("videoContainer3");
       var clics = 0;
+      var videoPlaying = false;
+      var ambianceAudioPlayed = false;
 
-      function changerApparence() {
+      // Lancer le son d'ambiance lorsque le contenu de la page est chargé
+      document.addEventListener("DOMContentLoaded", function () {
+        if (!ambianceAudioPlayed) {
+          ambianceAudio.play();
+          ambianceAudioPlayed = true;
+        }
+      });
+
+      function changerApparence(container) {
         var containerActuel = containers[clics % containers.length];
         containerActuel.classList.add("hidden");
 
@@ -84,21 +108,36 @@
 
         var containerSuivant = containers[clics % containers.length];
         containerSuivant.classList.remove("hidden");
-        changerCouleurFond(containerSuivant);
-      }
 
-      function changerCouleurFond(container) {
-        var couleur = couleurs[clics % couleurs.length];
-        container.style.backgroundColor = couleur;
+        // Gérer la lecture du son en fonction du type de contenu
+        var isVideo = containerSuivant.querySelector("video");
+
+        if (isVideo) {
+          videoPlaying = false;
+          ambianceAudio.pause();
+          ambianceAudio.currentTime = 0;
+        } else {
+          if (!videoPlaying && !ambianceAudioPlayed) {
+            ambianceAudio.play();
+            ambianceAudioPlayed = true;
+          }
+        }
       }
 
       function retourAuDebut() {
-        for (var i = 1; i < containers.length; i++) {
-          containers[i].classList.add("hidden");
-        }
-        clics = 0;
-        containers[0].classList.remove("hidden");
-        changerCouleurFond(containers[0]);
+        // Ajouter le code pour rediriger vers index.html
+        window.location.href = '../index.html';
+      }
+
+      function videoEnded() {
+        videoContainer3.currentTime = 0;
+        ambianceAudio.play();
+        videoPlaying = false;
+      }
+
+      function lancerVideo() {
+        ambianceAudio.pause();
+        videoPlaying = true;
       }
     </script>
   </body>
