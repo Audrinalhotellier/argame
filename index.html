@@ -18,19 +18,20 @@
     <a href="./html/credit.html">crédit</a>
   </div>
 
-  <!-- Ajouter un bouton pour permettre à l'utilisateur de déclencher la lecture -->
-  <button onclick="initAudio()">Activer le son</button>
+  <!-- Bouton pour activer/désactiver le son -->
+  <button onclick="toggleAudio()">Activer/Désactiver le son</button>
 
   <script>
     var ambianceAudio = document.getElementById("ambianceAudio");
 
-    // Fonction pour initialiser la lecture du son
-    function initAudio() {
-      ambianceAudio.play();
-      
-      // Désactiver le bouton après le déclenchement de la lecture
-      var boutonSon = document.querySelector("button");
-      boutonSon.disabled = true;
+    // Fonction pour activer ou désactiver le son
+    function toggleAudio() {
+      // Vérifier si le son est en pause
+      if (ambianceAudio.paused) {
+        ambianceAudio.play(); // Si en pause, le démarrer
+      } else {
+        ambianceAudio.pause(); // Sinon, le mettre en pause
+      }
     }
 
     // Mise à jour : Arrêter le son lorsque la page est fermée
