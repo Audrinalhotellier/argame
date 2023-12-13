@@ -1,25 +1,17 @@
-/* Réinitialisation des styles pour assurer une cohérence entre les navigateurs */
-body {
-  margin: 0;
-}
 
-/* Styles du bouton de volume */
 .volume {
-  --line: #fff; /* Couleur de la ligne du haut-parleur */
-  --line-width: 6px; /* Épaisseur de la ligne du haut-parleur */
-  --duration: .5s; /* Durée de l'animation */
+  --line: #fff;
+  --line-width: 6px;
+  --duration: .5s;
 
   position: fixed;
-  top: 10px;
+  top: 40px;
   right: 10px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  background-color: transparent; /* Fond transparent */
-  border: none; /* Pas de bordure */
-}
-
-.volume input {
-  display: none; /* Masquer l'input radio */
+  background-color: transparent;
+  border: none;
+  z-index: 1000; /* Assure que le bouton est au-dessus des autres éléments */
 }
 
 .volume svg {
@@ -28,9 +20,14 @@ body {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: var(--line-width);
-  width: 108px;
-  height: 96px;
+  width: 36px; /* Taille réduite */
+  height: 32px; /* Taille réduite */
 }
+
+.volume input {
+  display: none; /* Masquer l'input radio */
+}
+
 
 .volume input + svg path {
   animation: var(--name) var(--duration) ease forwards;

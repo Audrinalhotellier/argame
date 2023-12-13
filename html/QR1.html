@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/son.css">
     <title>QR1</title>
   </head>
   <body>
+    <script src="./script/son.js"></script>
+    <button class="volume" onclick="toggleAudio()">
+      <input type="checkbox" id="volumeCheckbox">
+      <svg viewBox="0 0 108 96">
+        <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
+      </svg>
+    </button>
     <!-- Ajouter cet élément audio pour le son d'ambiance -->
     <audio id="ambianceAudio" loop>
       <source src="../assets/ambiance.mp3" type="audio/mp3" />
@@ -75,14 +83,18 @@
       </div>
     </div>
     <div id="container4" class="container hidden">
-      <a href="../html/camera.html"><img src="../assets/porte.jpg" alt="" /></a>
-      <a href="../html/camera.html"><img src="../assets/porte.jpg" alt="" /></a>
+      <a href="../html/continuer.html"><img src="../assets/porte.jpg" alt="" /></a>
+      <a href="../html/continuer.html "><img src="../assets/porte.jpg" alt="" /></a>
       <div class="navigation-buttons">
         <div class="navigation-button" onclick="retourAuDebut()">
           Revenir au Début
         </div>
       </div>
     </div>
+
+    <form action="../html/continuer.html" method="get" target="_blank">
+      <button type="submit">Continuer</button>
+    </form> 
 
     <script>
       var containers = document.querySelectorAll(".container");

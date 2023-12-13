@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/style2.css">
-  <link rel="stylesheet" href="./css/css.css">
+  <link rel="stylesheet" href="./css/son.css">
 </head>
 <body>
 
@@ -15,8 +15,8 @@
   </audio>
 
   <div>
-    <a href="./html/QR1.html">jeux</a><br>
-    <a href="./html/credit.html">crédit</a>
+    <a href="./html/QR1.html">Jeux</a><br>
+    <a href="./html/credit.html">Crédit</a>
   </div>
 
   <!-- Bouton pour activer/désactiver le son -->
@@ -28,25 +28,7 @@
     </svg>
   </button>
 
-  <script>
-    var ambianceAudio = document.getElementById("ambianceAudio");
-
-    // Fonction pour activer ou désactiver le son
-    function toggleAudio() {
-      // Vérifier si le son est en pause
-      if (ambianceAudio.paused) {
-        ambianceAudio.play(); // Si en pause, le démarrer
-      } else {
-        ambianceAudio.pause(); // Sinon, le mettre en pause
-      }
-    }
-
-    // Mise à jour : Arrêter le son lorsque la page est fermée
-    window.onbeforeunload = function () {
-      ambianceAudio.pause();
-      ambianceAudio.currentTime = 0;
-    };
-  </script>
+<script src="./script/son.js"></script>
 
 </body>
 </html>
