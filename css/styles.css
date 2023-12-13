@@ -81,18 +81,6 @@ span {
   background-repeat: no-repeat;
 }
 
-#container1 .background-image {
-  background-image: url("../css/a.svg"); /* Replace with your image path */
-  background-size: cover;
-  text-align: center;
-}
-
-#container2 .background-image {
-  background-image: url("../css/b.svg"); /* Replace with your image path */
-  background-size: cover;
-  text-align: center;
-}
-
 .hidden {
   display: none;
 }
