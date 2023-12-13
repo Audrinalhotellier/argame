@@ -3,6 +3,9 @@ body {
   color: black;
   text-shadow: #111 1px 0 10px;
   background-color: black;
+  background-image: url("../css/a.svg"); /* Replace with your image path */
+  background-size: cover;
+  text-align: center;
 }
 
 a {
@@ -79,13 +82,13 @@ span {
 }
 
 #container1 .background-image {
-  background-image: url("a.svg"); /* Replace with your image path */
+  background-image: url("../css/a.svg"); /* Replace with your image path */
   background-size: cover;
   text-align: center;
 }
 
 #container2 .background-image {
-  background-image: url("b.svg"); /* Replace with your image path */
+  background-image: url("../css/b.svg"); /* Replace with your image path */
   background-size: cover;
   text-align: center;
 }
