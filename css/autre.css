@@ -28,7 +28,7 @@ body {
   /* Ajoutez des styles supplémentaires pour donner l'apparence d'un bouton */
   .camera a {
     padding: 5px 10px; /* ajustez selon vos besoins */
-    background-color: #3498db; /* couleur de fond du "bouton" */
+    background-color: #d4e129; /* couleur de fond du "bouton" */
     color: #fff; /* couleur du texte */
     text-decoration: none; /* enlevez la soulignement du lien */
     border-radius: 5px; /* coins arrondis */
@@ -45,13 +45,31 @@ body {
   /* Ajoutez des styles supplémentaires selon vos besoins */
   .continuer {
     padding: 10px 20px;
-    background-color: #27ae60; /* Exemple de couleur de fond */
+    background-color: #060229; /* Exemple de couleur de fond */
     color: #fff; /* Couleur du texte */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
   }
+  
+  .explication {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  
+  /* Ajoutez des styles supplémentaires selon vos besoins */
+  @media only screen and (min-width: 768px) {
+    .explication {
+      font-size: 18px;
+    }
+  }
+  
   
   
   
