@@ -1,0 +1,57 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-shadow: #111 1px 0 10px;
+    background-color: black;
+    background-image: url("../css/a.svg");
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .camera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+  }
+  
+  .camera a {
+    display: block; /* permet au lien d'occuper toute la largeur de son conteneur */
+  }
+  
+  .camera img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Ajoutez des styles supplémentaires pour donner l'apparence d'un bouton */
+  .camera a {
+    padding: 5px 10px; /* ajustez selon vos besoins */
+    background-color: #3498db; /* couleur de fond du "bouton" */
+    color: #fff; /* couleur du texte */
+    text-decoration: none; /* enlevez la soulignement du lien */
+    border-radius: 5px; /* coins arrondis */
+    font-weight: bold; /* texte en gras */
+  }
+
+  .continuer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px; /* Ajoutez une marge selon vos préférences */
+  }
+  
+  /* Ajoutez des styles supplémentaires selon vos besoins */
+  .continuer {
+    padding: 10px 20px;
+    background-color: #27ae60; /* Exemple de couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  
+  

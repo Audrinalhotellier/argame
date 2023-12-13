@@ -4,22 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/son.css">
-  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/autre.css" />
   <title>Fontaine du cours</title>
 </head>
 <body>
+
   <audio id="ambianceAudio" loop>
     <source src="../assets/ambiance.mp3" type="audio/mp3" />
     Your browser does not support the audio tag.
   </audio>
 
-  <p>texte explication</p>
-  <form action="../Ar/Spallistu.html" method="get" target="_blank">
-    <button type="submit">Caméra</button>
-  </form>
+  <p class="explication">texte explication</p>
+  
+  <div class="camera">
+    <a href="../Ar/Spallistu.html">
+      <img src="../assets/UFulettu.png" alt="Bouton Camera">
+    </a>
+  </div>
+  
+ 
 
   <form action="../html/continuer.html" method="get" target="_blank">
-    <button type="submit">Continuer</button>
+    <button class="continuer" type="submit">Continuer</button>
   </form> 
 
   <button class="volume" onclick="toggleAudio()">
@@ -28,6 +34,8 @@
       <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
     </svg>
   </button>
+
   <script src="../script/son.js"></script>
+
 </body>
 </html>
