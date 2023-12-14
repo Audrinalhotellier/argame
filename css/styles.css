@@ -3,7 +3,7 @@ body {
   color: black;
   text-shadow: #111 1px 0 10px;
   background-color: black;
-  background-image: url("../css/a.svg"); /* Replace with your image path */
+  background-image: url("../css/a.svg"); 
   background-size: cover;
   text-align: center;
 }
