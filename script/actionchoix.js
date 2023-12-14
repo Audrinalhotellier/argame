@@ -1,17 +1,17 @@
-var QRM3choix1 = document.getElementById('QRM3choix1');
-var QRM3choix2 = document.getElementById('QRM3choix2');
+var QRM3choix1 = document.getElementById('QR3Mchoix1');
+var QRM3choix2 = document.getElementById('QR3Mchoix2');
 
-var QRM4choix1 = document.getElementById('QRM4choix1');
-var QRM4choix2 = document.getElementById('QRM4choix2');
+var QRM4choix1 = document.getElementById('QR4Mchoix1');
+var QRM4choix2 = document.getElementById('QR4Mchoix2');
 
-var QRM5choix1 = document.getElementById('QRM5choix1');
-var QRM5choix2 = document.getElementById('QRM5choix2');
+var QRM5choix1 = document.getElementById('QR5Mchoix1');
+var QRM5choix2 = document.getElementById('QR5Mchoix2');
 
-var QRM7choix1 = document.getElementById('QRM7choix1');
-var QRM7choix2 = document.getElementById('QRM7choix2');
+var QRM7choix1 = document.getElementById('QR7Mchoix1');
+var QRM7choix2 = document.getElementById('QR7Mchoix2');
 
-var QRM8choix1 = document.getElementById('QRM8choix1');
-var QRM8choix2 = document.getElementById('QRM8choix2');
+var QRM8choix1 = document.getElementById('QR8Mchoix1');
+var QRM8choix2 = document.getElementById('QR8Mchoix2');
 
 QRM3choix1.addEventListener("click", () => {
   var tab = new Map();
