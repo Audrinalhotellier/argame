@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/son.css" />
+    <link rel="stylesheet" href="../css/autre.css" />
     <title>Chapelle Saint-Croix</title>
   </head>
   <body>
@@ -15,12 +16,14 @@
     <p>texte mort</p>
 
     <form action="../html/continuer.html" method="get" target="_blank">
-      <button type="submit">Continuer</button>
+      <button class="continuer" type="submit">Continuer</button>
     </form>
 
-    <form action="../Ar/Dragone.html" method="get" target="_blank">
-      <button type="submit">Caméra</button>
-    </form>
+    <div class="camera">
+      <a href="../Ar/Spallistu.html">
+        <img src="../assets/UFulettu.png" alt="Bouton Camera">
+      </a>
+    </div>
 
     <button class="volume" onclick="toggleAudio()">
       <input type="checkbox" id="volumeCheckbox" />
