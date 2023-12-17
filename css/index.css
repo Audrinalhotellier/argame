@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    color: black;
+    text-shadow: #111 1px 0 10px;
+    background-color: black;
+    background-image: url("../css/ux_anima.webp"); 
+    background-size: cover;
+    text-align: center;
+  }
+  
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 10%;
+    margin: 0;
+    position: absolute;
+    top: 82%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* test.css */
+
+@font-face {
+    font-family: "Dumbledor";
+    src: url('./dum1.ttf') format('truetype');
+    /* Ajoutez d'autres propriétés de la police si nécessaire */
+  }
+
+  .custom-font {
+    font-family: "Dumbledor", sans-serif;
+    /* Ajoutez d'autres styles si nécessaire */
+  }
+  

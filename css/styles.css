@@ -1,153 +1,75 @@
 body {
-  font-family: "Lato", sans-serif;
-  color: black;
-  text-shadow: #111 1px 0 10px;
-  background-color: black;
-  background-image: url("../css/a.svg"); 
-  background-size: cover;
-  text-align: center;
-}
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-shadow: #111 1px 0 10px;
+    background-color: black;
+    background-image: url("../css/a.svg");
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .camera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+  }
+  
+  .camera a {
+    display: block; /* permet au lien d'occuper toute la largeur de son conteneur */
+  }
+  
+  .camera img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Ajoutez des styles supplémentaires pour donner l'apparence d'un bouton */
+  .camera a {
+    padding: 5px 10px; /* ajustez selon vos besoins */
+    background-color: #d4e129; /* couleur de fond du "bouton" */
+    color: #fff; /* couleur du texte */
+    text-decoration: none; /* enlevez la soulignement du lien */
+    border-radius: 5px; /* coins arrondis */
+    font-weight: bold; /* texte en gras */
+  }
 
-a {
-  text-align: center;
-}
-
-img {
-  width: 200px;
-  height: 350px;
-}
-
-h2 {
-  font-size: 30px;
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 30px;
-}
-h1 {
-  font-size: 30px;
-  display: block;
-  margin-top: 20px;
-  text-align: center;
-}
-p {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  position: relative;
-  margin-bottom: 10%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
-span {
-  font-size: 20px;
-}
-
-.container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  text-align: center;
-}
-
-.navigation-buttons {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hidden {
-  display: none;
-}
-
-.navigation-button {
-  padding: 5px 10px;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
-}
-.pict {
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin: auto;
-  box-shadow: 3px 3px #111, -1em 0 0.4em #111;
-}
-
-.btn {
-  width: 100px;
-  height: 100px;
-  z-index: 9999;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: aqua;
-}
-
-.btn2 {
-  width: 100px;
-  height: 100px;
-  z-index: 9999;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: rgb(255, 0, 123);
-}
-
-.test {
-  width: 100px;
-  height: 100px;
-  z-index: 9999;
-  position: absolute;
-  top: calc(50% - 100px);
-  left: calc(50% - 100px);
-}
-
-
-.choix {
-  width: 100px;
-  height: 100px;
-  z-index: 9999;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: aqua;
-}
-
-.choix2 {
-  width: 100px;
-  height: 100px;
-  z-index: 9999;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: rgb(255, 0, 123);
-}
-
-
-
+  .continuer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px; /* Ajoutez une marge selon vos préférences */
+  }
+  
+  /* Ajoutez des styles supplémentaires selon vos besoins */
+  .continuer {
+    padding: 10px 20px;
+    background-color: #060229; /* Exemple de couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .explication {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  
+  /* Ajoutez des styles supplémentaires selon vos besoins */
+  @media only screen and (min-width: 768px) {
+    .explication {
+      font-size: 18px;
+    }
+  }
+  
+  
+  
+  

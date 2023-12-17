@@ -1,0 +1,153 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-shadow: #111 1px 0 10px;
+  background-color: black;
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 350px;
+}
+
+h2 {
+  font-size: 30px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 30px;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+p {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 10%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+span {
+  font-size: 20px;
+}
+
+.container {
+  background-image: url("../css/ux_anima.webp"); 
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.navigation-buttons {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+
+.navigation-button {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.pict {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+  box-shadow: 3px 3px #111, -1em 0 0.4em #111;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: aqua;
+}
+
+.btn2 {
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 0, 123);
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+
+.choix {
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: aqua;
+}
+
+.choix2 {
+  width: 100px;
+  height: 100px;
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 0, 123);
+}
+
+
+

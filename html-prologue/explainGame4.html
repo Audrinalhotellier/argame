@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./explaingame.css">
+    <link rel="stylesheet" href="./explaingame1.css">
+    <link rel="stylesheet" href="../css/son.css">
+
+
+    <title>ex</title>
+</head>
+<body>
+    <button class="volume" onclick="toggleAudio()">
+        <input type="checkbox" id="volumeCheckbox">
+        <svg viewBox="0 0 108 96">
+          <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
+        </svg>
+      </button>
+    <section class="main">
+        <a class="navigation" href="./explainGame3.html"></a>
+        <a class="navigation" href="./explainGame5.html"></a>
+    </section>
+
+    <section class="content">
+    <script src="./script/son.js"></script>
+
+
+    <!-- Ajouter cet élément audio pour le son d'ambiance -->
+    <audio id="ambianceAudio" loop>
+      <source src="./assets/ambiance.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <div
+      id="container3"
+      class="container hidden"
+      onclick="changerApparence(this)"
+    >
+      <video
+        id="videoContainer3"
+        width="100%"
+        height="100%"
+        controls
+        onended="videoEnded()"
+        onclick="lancerVideo()"
+      >
+        <source src="../assets/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="navigation-buttons">
+        <div class="navigation-button" onclick="retourAuDebut()">
+          Revenir au Début
+        </div>
+      </div>
+    </div>
+</section>
+    <script>
+      var containers = document.querySelectorAll(".container");
+      var ambianceAudio = document.getElementById("ambianceAudio");
+      var videoContainer3 = document.getElementById("videoContainer3");
+      var clics = 0;
+      var videoPlaying = false;
+      var ambianceAudioPlayed = false;
+
+        // Gérer la lecture du son en fonction du type de contenu
+        var isVideo = containerSuivant.querySelector("video");
+
+        if (isVideo) {
+          videoPlaying = false;
+          ambianceAudio.pause();
+          ambianceAudio.currentTime = 0;
+        } else {
+          if (!videoPlaying && !ambianceAudioPlayed) {
+            ambianceAudio.play();
+            ambianceAudioPlayed = true;
+          }
+        }
+
+
+      function videoEnded() {
+        videoContainer3.currentTime = 0;
+        ambianceAudio.play();
+        videoPlaying = false;
+      }
+
+      function lancerVideo() {
+        ambianceAudio.pause();
+        videoPlaying = true;
+      }
+    </script>
+  
+</body>
+</html>

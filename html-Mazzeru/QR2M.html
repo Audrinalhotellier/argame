@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/son.css">
-  <link rel="stylesheet" href="../css/autre.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
   <title>Fontaine du cours</title>
 </head>
 <body>
@@ -36,28 +36,5 @@
   <script src="../script/son.js"></script>
   <p class="resultat" style="display: none"></p>
 
-  <script>
-    // Script pour récupérer le résultat depuis le stockage local et l'afficher
-    document.addEventListener("DOMContentLoaded", function () {
-      const resultat = document.querySelector(".resultat");
-
-      // Fonction pour mettre à jour le texte dans la classe "resultat"
-      function updateResultatText() {
-        if (localStorage.getItem("choix") === "pendentif") {
-          resultat.innerHTML = "enigme 1";
-        } else {
-          resultat.innerHTML = "enigme 2";
-        }
-
-        // Afficher le texte une fois qu'il est mis à jour
-        resultat.style.display = "block";
-      }
-
-      // Appeler la fonction une fois que la page est chargée
-      updateResultatText();
-    });
-  </script>
-
-<script src="./script/pendentif.js"></script>
 </body>
 </html>

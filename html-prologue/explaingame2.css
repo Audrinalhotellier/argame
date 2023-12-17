@@ -1,0 +1,9 @@
+body{
+    font-family: sans-serif;
+    color: black;
+    text-shadow: #111 1px 0 10px;
+    background-color: black;
+    background-image: url("../css/ux_anima_3.webp"); 
+    background-size: cover;
+    text-align: center;
+}
