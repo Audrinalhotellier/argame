@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/volume.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./volume.css" />
 </head>
 <body>
+    <audio id="ambianceAudio" loop>
+        <source src="./assets/ambiance.mp3" type="audio/mp3" />
+        Your browser does not support the audio tag.
+    </audio>
 
-  <!-- Ajouter cet élément audio pour le son d'ambiance -->
-  <audio id="ambianceAudio" loop>
-    <source src="./assets/ambiance.mp3" type="audio/mp3" />
-    Your browser does not support the audio tag.
-  </audio>
-
-  <div>
-    <a class="custom-font" href="./html-prologue/explainGame1.html">Jouer</a><br>
-  </div>
-
-  <div class="position">
+    <div class="position">
     <label for="volumeCheckbox" class="volume" onclick="toggleAudio()"> 
          <input id="volumeCheckbox" type="checkbox" class="volume-checkbox" onclick="toggleAudio()" />
         <svg viewBox="0 0 108 96">
@@ -27,8 +22,6 @@
         </svg>
     </label>
 </div>
-
-<script src="./script/son.js"></script>
-
+    <script src="./script/son.js"></script>
 </body>
 </html>
