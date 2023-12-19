@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./volume.css" />
-</head>
-<body>
+  </head>
+  <body>
     <audio id="ambianceAudio" loop>
-        <source src="./assets/ambiance.mp3" type="audio/mp3" />
-        Your browser does not support the audio tag.
+      <source src="./assets/ambiance.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
     </audio>
 
     <div class="position">
-    <label for="volumeCheckbox" class="volume" onclick="toggleAudio()"> 
-         <input id="volumeCheckbox" type="checkbox" class="volume-checkbox" onclick="toggleAudio()" />
+      <label for="volumeCheckbox" class="volume" onclick="toggleAudio()">
+        <input
+          id="volumeCheckbox"
+          type="checkbox"
+          class="volume-checkbox"
+          onclick="toggleAudio()"
+        />
         <svg viewBox="0 0 108 96">
-            <path d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"></path>
-            <path d="M79,62 C83,57.3333333 85,52.6666667 85,48 C85,43.3333333 83,38.6666667 79,34 L49,3"></path>
-            <path d="M95,69 C101.666667,61.6666667 105,54.3333333 105,47 C105,39.6666667 101.666667,32.3333333 95,25 L75.5,6 L49,33"></path>
+          <path
+            d="M7,28 L35,28 L35,28 L59,8 L59,88 L35,68 L7,68 C4.790861,68 3,66.209139 3,64 L3,32 C3,29.790861 4.790861,28 7,28 Z"
+          ></path>
+          <path
+            d="M79,62 C83,57.3333333 85,52.6666667 85,48 C85,43.3333333 83,38.6666667 79,34 L49,3"
+          ></path>
+          <path
+            d="M95,69 C101.666667,61.6666667 105,54.3333333 105,47 C105,39.6666667 101.666667,32.3333333 95,25 L75.5,6 L49,33"
+          ></path>
         </svg>
-    </label>
-</div>
+      </label>
+    </div>
+
     <script src="./script/son.js"></script>
-</body>
+  </body>
 </html>
